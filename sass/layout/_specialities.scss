@@ -1,0 +1,33 @@
+.specialities {
+  padding-top: 94px;
+}
+
+.specialities-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.specialities-title {
+  @include font($fw: 700, $ls: 0.03em);
+  text-transform: uppercase;
+}
+.specialities-content {
+  margin-top: 10px;
+  @include font($lh: 1.71, $ls: 0.03em);
+  color: var(--secondary-text-color);
+}
+
+.specialities-container {
+  display: flex;
+}
+
+.specialities-item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
