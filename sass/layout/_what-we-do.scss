@@ -3,20 +3,20 @@
   padding-bottom: 94px;
 }
 
-.what-we-do-title {
+.what-we-do__title {
   margin-bottom: 50px;
   @include font($fw: 700, $fs: 36px, $lh: 1.16, $ls: 0.03em);
   text-align: center;
 }
 
-.what-we-do-container {
+.what-we-do-list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-top: -30px;
 }
 
-.what-we-do-item {
+.what-we-do-list__item {
   width: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-top: 30px;
@@ -31,7 +31,7 @@
   margin-right: 30px;
 }*/
 
-.what-we-do-content {
+.what-we-do-list__content {
   @include font($fw: 700, $ls: 0.03em);
   text-align: center;
   text-transform: uppercase;

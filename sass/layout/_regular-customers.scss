@@ -4,7 +4,7 @@
   background-color: #ffffff;
 }
 
-.regular-customers-title {
+.regular-customers__title {
   @include font($fw: 700, $fs: 36px, $lh: 1.16, $ls: 0.03em);
   text-align: center;
   margin-bottom: 50px;
@@ -17,13 +17,13 @@
   margin-right: -30px;
 }
 
-.regular-customers-item {
+.regular-customers-list__item {
   width: calc(100% / 6 - 30px);
   margin-top: 30px;
   margin-right: 30px;
 }
 
-.regular-customers-link {
+.regular-customers-list__link {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,10 +1,15 @@
-.modal-form-label {
+.form__content-placement {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
   @include font($fs: 12px, $lh: 1.17, $ls: 0.01em);
   color: #757575;
   margin-bottom: 4px;
 }
 
-.modal-input-field {
+.form__input-field {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -22,11 +27,11 @@
   }
 }
 
-.input-wrap {
+.form__input-wrap {
   position: relative;
 }
 
-.input-icon {
+.form__input-icon {
   position: absolute;
   left: 12px;
   top: 11px;
@@ -38,13 +43,13 @@
   }
 }
 
-.modal-form-comment {
+.form__comment {
   @include font($fs: 12px, $lh: 1.17, $ls: 0.01em);
   color: #757575;
   margin-bottom: 4px;
 }
 
-.modal-comment-input-field {
+.form__comment-input-field {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -65,7 +70,7 @@
   }
 }
 
-.agreement-text {
+.form__agreement-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,28 +90,28 @@
     transition-duration: var(--hover-time);
     transition-timing-function: var(--cube);
   }
-  .agreement-check:checked + & span {
+  .form__agreement-check:checked + & span {
     border: none;
     background-color: #2196f3;
   }
 }
 
-.agreement-icon {
+.form__agreement-icon {
   fill: transparent;
   transition-property: fill;
   transition-duration: var(--hover-time);
   transition-timing-function: var(--cube);
-  .agreement-check:checked + .agreement-text & {
+  .form__agreement-check:checked + .form__agreement-text & {
     fill: #ffffff;
   }
 }
 
-.agreement-link {
+.form_agreement-link {
   margin-left: 3px;
   color: #2196f3;
 }
 
-.modal-button {
+.form__button {
   @include font($fw: 700, $fs: 16px, $lh: 1.88, $ls: 0.06em);
   color: #ffffff;
   background-color: var(--accent-color);
@@ -127,9 +132,4 @@
   &:focus {
     background-color: #2196f3;
   }
-}
-
-.modal-content-placement {
-  display: flex;
-  flex-direction: column;
 }

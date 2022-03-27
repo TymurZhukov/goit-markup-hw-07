@@ -2,7 +2,18 @@
   padding-top: 94px;
 }
 
-.specialities-icon {
+.specialities-list {
+  display: flex;
+}
+
+.specialities-list__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.specialities-list__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,23 +22,12 @@
   margin-bottom: 30px;
 }
 
-.specialities-title {
+.specialities-list__title {
   @include font($fw: 700, $ls: 0.03em);
   text-transform: uppercase;
 }
-.specialities-content {
+.specialities-list__content {
   margin-top: 10px;
   @include font($lh: 1.71, $ls: 0.03em);
   color: var(--secondary-text-color);
-}
-
-.specialities-container {
-  display: flex;
-}
-
-.specialities-item {
-  width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }

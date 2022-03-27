@@ -1,18 +1,15 @@
-.links-placement {
-  margin-top: 20px;
-}
-
-.footer-links-item {
-  margin-bottom: 9px;
-}
-
 .footer {
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-logo {
+.footer__connect-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
   font-family: Raleway;
   font-style: normal;
   @include font($fw: 700, $fs: 26px, $lh: 1.2, $ls: 0.03em);
@@ -26,10 +23,19 @@
   }
 }
 
-.footer-logo-half {
+.footer__logo--half {
   color: #2196f3;
 }
-.footer-map {
+
+.address-links--placement {
+  margin-top: 20px;
+}
+
+.address-links__item {
+  margin-bottom: 9px;
+}
+
+.address-links__map {
   font-family: inherit;
   font-style: normal;
   @include font($lh: 1.71, $ls: 0.03em);
@@ -43,7 +49,7 @@
   }
 }
 
-.footer-tel {
+.address-links__mail {
   font-family: inherit;
   font-style: normal;
   @include font();
@@ -57,7 +63,7 @@
   }
 }
 
-.footer-mail {
+.address-links__tel {
   font-family: inherit;
   font-style: normal;
   @include font();
@@ -69,18 +75,13 @@
   &:focus {
     color: #ffffff;
   }
-}
-
-.footer-connect-wrap {
-  display: flex;
-  align-items: baseline;
 }
 
 .join-us {
   margin-left: 70px;
 }
 
-.join-us-title {
+.join-us__title {
   @include font($fw: 700, $ls: 0.03em);
   text-transform: uppercase;
   color: #ffffff;
@@ -91,7 +92,11 @@
   margin-top: 20px;
 }
 
-.join-us-social-link {
+.join-us-social-list__item + .join-us-social-list__item {
+  margin-left: 10px;
+}
+
+.join-us-social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,19 +113,24 @@
   }
 }
 
-.join-us-social-icon {
+.join-us-social-list__icon {
   fill: #ffffff;
-}
-
-.join-us-social-item + .join-us-social-item {
-  margin-left: 10px;
 }
 
 .subscription {
   margin-left: 93px;
 }
 
-.footer-input-field {
+.subscribe-form__label {
+  @include font($fw: 700, $ls: 0.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  padding-bottom: 20px;
+  width: 219px;
+}
+
+.subscribe-form__input-field {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -128,6 +138,7 @@
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   @include font($fs: 16px, $lh: 1.25, $ls: 0.03em);
+  padding-left: 16px;
   color: #ffffff;
   background-color: transparent;
   transition-property: border-color;
@@ -144,16 +155,7 @@
   }
 }
 
-.subscribe-label {
-  @include font($fw: 700, $ls: 0.03em);
-  text-transform: uppercase;
-  color: #ffffff;
-  display: block;
-  padding-bottom: 20px;
-  width: 219px;
-}
-
-.subscribe-button {
+.subscribe-form__button {
   @include font($fw: 700, $fs: 16px, $lh: 1.87, $ls: 0.06em);
   padding: 10px 29px;
   text-align: center;
@@ -173,10 +175,11 @@
   }
 }
 
-.button-desighn {
+.subscribe-form__button-desighn {
   display: flex;
   align-items: center;
 }
-.subscribe-icon {
+
+.subscribe-form__button-icon {
   margin-left: 10px;
 }
